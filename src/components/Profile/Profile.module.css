@@ -1,0 +1,41 @@
+.profile {
+    max-width: 280px;
+    margin: 15px;
+    padding: 5px;
+    border: 2px solid #a2a2a2;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.description {
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.avatar {
+    max-width: 280px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.tag {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.location {
+    margin: 0;
+    padding: 12px;
+}
+
+.stats {
+    list-style: none;
+    margin-left: 30px;
+}
