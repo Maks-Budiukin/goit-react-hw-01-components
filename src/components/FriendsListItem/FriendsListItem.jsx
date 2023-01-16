@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function FriendListItem({ avatar, name, isOnline, id }) {
     
 
@@ -10,3 +12,9 @@ export default function FriendListItem({ avatar, name, isOnline, id }) {
       )
 }
 
+FriendListItem.PropTypes = {
+  id: PropTypes.number.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+}

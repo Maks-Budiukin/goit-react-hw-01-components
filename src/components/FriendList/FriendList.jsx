@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 import FriendListItem from "components/FriendsListItem/FriendsListItem";
 
-export default function FriendList({ friends, children }) {
+export default function FriendList({ friends }) {
     
 return (
     <ul>
@@ -17,4 +19,8 @@ return (
         
     </ul>
 );
+}
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.shape({}))
 }
