@@ -1,0 +1,43 @@
+.item {
+    border: 1px solid gray;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    background-color: #d3d3d3;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item:hover {
+    transform: scale(1.03);
+    border-radius: 4px;
+}
+
+.online {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin: auto 10px;
+}
+
+.offline {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin: auto 10px;
+}
+
+.avatar {
+    border: 1px solid silver;
+    border-radius: 25%;
+    background-color: #fff;
+}
+
+.name {
+    margin-left: 10px;
+}

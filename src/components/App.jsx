@@ -10,8 +10,19 @@ import friends from "assets/friends.json";
 import TransactionsHistory from "components/TransactionHistory/TransactionHistory";
 import transactions from "assets/transactions.json";
 
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+    display: flex;
+        width: 1000px;
+        margin: auto;
+        padding: 0 50px;
+        justify-content: space-between;
+    
+    `
+
 export default function App() {
-    return <>
+    return <Wrapper>
     
         <Profile
             userName={user.username}
@@ -23,10 +34,12 @@ export default function App() {
             likes={user.stats.likes}
         />
           
+        <div>
         <Statistics stats={data} />
         
         <FriendList friends={friends} />
+        </div>
         
         <TransactionsHistory items={transactions} />
-    </>
+    </Wrapper>
 }

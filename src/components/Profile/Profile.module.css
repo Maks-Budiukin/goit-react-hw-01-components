@@ -37,5 +37,16 @@
 
 .stats {
     list-style: none;
-    margin-left: 30px;
+    padding: 0;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
 }
