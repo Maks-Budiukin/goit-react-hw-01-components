@@ -39,11 +39,11 @@ const StatSection = styled.section`
 `
 
 
-export default function Statistics({ title = "Upload Stats", stats }) {
+export default function Statistics({ title, stats }) {
   return (
     
     <StatSection>
-      {title ? (<Title>{title}</Title> ) : null}
+      {title && <Title>{title}</Title> }
     <StatList>
       {stats.map(({id, label, percentage}) => 
         

@@ -35,7 +35,7 @@ export default function App() {
         />
           
         <div>
-        <Statistics stats={data} />
+        <Statistics stats={data} title = "Upload Stats"/>
         
         <FriendList friends={friends} />
         </div>
